@@ -1,0 +1,113 @@
+.contact-wraper {
+    background-color: #fff;
+    box-shadow: 0 10px 60px 0 rgb(31 34 120 / 10%);
+    border-radius: 40px;
+    padding: 70px 50px 40px;
+    position: relative;
+    margin-top: -150px;
+}
+
+.contact-wraper .contact-form .form-group {
+    margin-bottom: 30px;
+}
+
+section{
+    position: relative;
+    z-index: 1;
+}
+
+.form-wraper textarea.form-control {
+    height: 150px !important;
+}
+
+.contact-info {
+    padding: 50px 50px 30px;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    background-image: url(pic-1.ad1ed7ee.jpg);
+}
+
+.ovpr-dark:before, .ovpr-light:before, .ovpr-middle:before, .ovpr:before {
+    background-color: #565acf !important;
+    position: absolute;
+}
+
+.ovbl-dark:before, .ovgd-dark:before, .ovpr-dark:before, .ovwh-dark:before {
+    opacity: .9;
+}
+
+.ovbl-dark, .ovbl-light, .ovbl-middle, .ovgd-dark, .ovgd-light, .ovgd-middle, .ovpr, .ovpr-dark, .ovpr-light, .ovpr-middle, .ovwh-dark, .ovwh-light, .ovwh-middle {
+    position: relative;
+}
+
+.ovbl-dark:before, .ovbl-light:before, .ovbl-middle:before, .ovgd-dark:before, .ovgd-light:before, .ovgd-middle:before, .ovpr-dark:before, .ovpr-light:before, .ovpr-middle:before, .ovpr:before, .ovwh-dark:before, .ovwh-light:before, .ovwh-middle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info .info-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info .info-inner .title {
+    color: #fff;
+}
+
+.contact-info .icon-box {
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.contact-info .icon-box .title {
+    margin-bottom: 12px;
+    border-bottom: 2px solid hsla(0,0%,100%,.2);
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-info .icon-box .title svg {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.contact-info .icon-box p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.contact-info .social-media li a {
+    color: #565acf;
+    background-color: #fff;
+}
+
+.contact-info .social-media li a:hover {
+    color: #ffffff;
+    background-color: #f17732;
+}
+
+@media(max-width:732px){
+    .contact-info .icon-box {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        margin-left: 0;
+    }
+}

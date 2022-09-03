@@ -1,0 +1,30 @@
+.account-wraper2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5fc;
+}
+
+.account-wraper2 .logo {
+    margin-bottom: 30px;
+}
+
+a, a.active, a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #565acf;
+    font-weight: 500;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.mt-0{
+    margin-top: 0px;
+}
+
+.text-center p{
+    color: #444;
+    font-weight: 500;
+}

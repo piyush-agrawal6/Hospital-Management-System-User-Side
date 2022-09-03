@@ -1,0 +1,37 @@
+.error-404 .inner-content {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+}
+
+.error-404 .error-title {
+    font-size: 180px;
+    line-height: 180px;
+    color: #1f2278;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.error-404 .error-title span {
+    width: 145px;
+    height: 145px;
+    display: inline-block;
+    background-image: url(error.4b5472f1.gif);
+    background-size: 100%;
+    margin: 0 10px;
+}
+
+.error-404 .error-text {
+    margin-bottom: 15px;
+}
+
+.error-404 p {
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #444;
+}
+
+.m-r5{
+    margin-right: 5px;
+}

@@ -1,0 +1,215 @@
+.rounded {
+    border-radius: 8px!important;
+}
+
+.list-check-squer li {
+    display: block;
+    color: #1f2278;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 15px 7px 50px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.list-check-squer li svg{
+    background-color: rgb(86, 90, 207);
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    padding: 6px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease 0s;
+    border-radius: 4px;
+}
+
+.list-check-squer li:hover svg{
+    background-color: #f17732;
+}
+
+.skillbar-box .title {
+    margin-bottom: 0;
+}
+
+.skillbar-box .skillbar {
+    position: relative;
+    display: inline-block;
+    background: rgba(0,0,0,.15);
+    height: 6px;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.skillbar-box .skillbar-bar {
+    height: 6px;
+    border-radius: 10px;
+    width: 0;
+    background: #565acf;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin-bottom: 0;
+    overflow: unset!important;
+}
+
+.skillbar-box .skill-bar-percent {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    color: #565acf;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.skillbar-box .skillbar-bar:after {
+    content: "";
+    border-radius: 15px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -5px;
+    border: 3px solid #565acf;
+    top: -8px;
+}
+
+.w-96{
+    width: 96% !important;
+}
+
+.w-79{
+    width: 79% !important;
+}
+
+.w-75{
+    width: 75% !important;
+}
+
+.sticky-top {
+    top: 130px;
+}
+
+.widget {
+    margin-bottom: 40px;
+}
+
+.service-menu {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px 6px 4px 4px!important;
+    padding: 30px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 6%);
+    border: 1px solid rgba(86,90,207,.2);
+    border-bottom: 3px solid #565acf;
+}
+
+.service-menu li {
+    margin-bottom: 10px;
+}
+
+.service-menu li.active a, .service-menu li:hover a {
+    background-color: #f17732;
+}
+
+.service-menu li a {
+    display: block;
+    padding: 15px 50px 15px 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: all .5s;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #565acf;
+}
+
+.service-menu li.active a svg, .service-menu li:hover a svg {
+    color: #f17732;
+}
+
+.service-menu li a svg {
+    padding: 6px;
+    text-align: center;
+    border-radius: 35px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border-radius: inherit;
+    display: inline-block;
+    color: #565acf;
+}
+
+.brochure-bx {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px 6px 4px 4px!important;
+    padding: 30px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 6%);
+    border: 1px solid rgba(86,90,207,.2);
+    border-bottom: 3px solid #565acf;
+}
+
+.brochure-bx .title-head {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    padding-bottom: 8px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.brochure-bx h5{
+    font-weight: 700;
+}
+
+.brochure-bx .title-head:after {
+    background: #565acf;
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.download-link {
+    position: relative;
+    display: block;
+    padding: 15px 15px 15px 65px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #565acf;
+}
+
+.download-link img {
+    width: 40px;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+}
+
+.download-link .title {
+    font-size: 15px;
+    margin: 0;
+    line-height: 22px;
+    color: #fff;
+}
+
+.download-link span {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}

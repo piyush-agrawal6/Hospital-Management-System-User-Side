@@ -1,0 +1,311 @@
+.service-wraper:after {
+    content: "";
+    height: 100%;
+    width: 45%;
+    background-color: #fff !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 40px 0 0 40px;
+}
+
+/* Banner About Section */
+
+.page-banner {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img1.815eb17a.jpg);
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+    width: 100%;
+    z-index: 1;
+}
+
+.page-banner .page-banner-entry {
+    height: 420px;
+    padding-top: 6em;
+    padding-bottom: 60px;
+}
+
+.page-banner h1 {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1f2278;
+    text-transform: capitalize;
+}
+
+.breadcrumb-row {
+    box-shadow: 0 5px 30px 0 rgb(86 90 207 / 30%);
+    font-family: "Montserrat",sans-serif;
+    background-color: #565acf !important;
+    padding: 12px 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.breadcrumb-row ul {
+    background: transparent;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+.breadcrumb-row ul li {
+    font-size: 14px;
+    padding: 0;
+    display: inline-flex;
+    font-weight: 500;
+    align-items: center;
+}
+
+.breadcrumb-row ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.breadcrumb-row ul li a svg {
+    margin-right: 10px;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    color: #fff;
+    font-size: 20px;
+}
+
+.page-banner-entry nav{
+    width: 27%;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.breadcrumb-item.active {
+    color: white !important;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+    font-size: 18px;
+    padding-right: 10px;
+    line-height: 18px;
+    color: #fff;
+    content: "/";
+    opacity: .4;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.page-banner:after {
+    content: "";
+    background-image: url(download4554.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    z-index: -1;
+}
+
+/* Services About Section */
+
+
+.service-wraper2 {
+    background-color: rgba(86,90,207,.1);
+}
+
+.feature-bx3 {
+    border-radius: 20px;
+    padding: 50px 30px;
+    transition: all .5s;
+    background-color: #fff;
+    position: relative;
+    margin: 15px 0 0 15px;
+}
+
+.feature-bx3 .counter {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    color: #f17732;
+    margin-bottom: 10px;
+    transition: 0.7s;
+}
+
+.feature-bx3 .ttr-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.feature-container p:last-child {
+    margin: 0;
+}
+
+.feature-bx3 p {
+    font-size: 14px;
+}
+
+.feature-bx3:hover{
+    background: #565acf;
+    color: #fff !important;
+}
+
+.feature-bx3:hover h2 , .feature-bx3:hover h5 , .feature-bx3:hover p{
+    color: #fff !important;
+    transition: all 0.7s;
+}
+
+.feature-bx3:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #565acf;
+    z-index: -1;
+}
+
+/* Team Section */
+
+.team-member {
+    background-color: #fff;
+    text-align: center;
+    padding: 35px 40px 50px;
+    border-radius: 20px;
+    transition: all .5s;
+    z-index: 1;
+    position: relative;
+    border: 2px solid rgba(86,90,207,.2);
+}
+
+.team-member .team-media {
+    padding: 20%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.team-member .team-media:before {
+    background-image: url(download4349.png);
+    background-size: 77%;
+}
+
+.team-member .team-media:after, .team-member .team-media:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all .5s;
+    opacity: .2;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.team-member .team-media:after {
+    background-image: url(download3232.png);
+    background-size: 100%;
+}
+
+.team-member .team-media img {
+    -webkit-mask-image: url(download2323.png);
+    mask-image: url(download2323.png);
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+}
+
+.team-member .team-info .team-info-comntent {
+    margin-bottom: 25px;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Montserrat",sans-serif;
+    color: #1f2278;
+    line-height: 1.3;
+}
+
+.team-member .team-info .team-info-comntent span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f17732 !important;
+}
+
+.team-member .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 0 -6px;
+}
+
+.team-member .social-media li {
+    display: inline-block;
+    padding: 0 6px;
+}
+
+.team-member .social-media li a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: #565acf;
+    border-radius: 8px;
+    transition: all .5s;
+    text-decoration: none;
+    color: #fff;
+    line-height: 42px;
+    text-align: center;
+    box-shadow: 0 10px 40px 0 rgb(31 34 120 / 10%);
+}
+
+.team-member ul.social-media {
+    padding-left: 0rem !important;
+}
+
+.team-member .social-media li a svg{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.team-member .social-media li a:hover{
+    background-color: #f17732;
+}
+
+.team-member.active, .team-member:hover {
+    box-shadow: 0 10px 50px 0 rgb(0 2 72 / 10%);
+    z-index: 9;
+    border-color: #fff;
+}
+
+.team-member.active .team-media:after,
+.team-member.active .team-media:before,
+.team-member:hover .team-media:after,
+.team-member:hover .team-media:before {
+    opacity: 1;
+}
+
+.margn{
+    margin-bottom: 5em;
+}
+
+.blog-slide .blog-card {
+    margin: 0px;
+}
