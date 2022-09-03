@@ -28,19 +28,19 @@ root.render(
       <Route path='' element={<Home/>}/>
       <Route path='/reactpro' element={<Home/>}/>
       <Route path='/' element={<Home/>}/>
-      <Route path='/home' element={<Home/>}/>
-      <Route path='/reactpro/about' element={<About/>}/>
-      <Route path='/ourteam' element={<OurTeam/>}/>
-      <Route path='/faqs' element={<FaqS/>}/>
-      <Route path='/booking' element={<Booking/>}/>
-      <Route path='/notfound' element={<NotFound/>}/>
+      <Route path='#home' element={<Home/>}/>
+      <Route path='#about' element={<About/>}/>
+      <Route path='#ourteam' element={<OurTeam/>}/>
+      <Route path='#faqs' element={<FaqS/>}/>
+      <Route path='#booking' element={<Booking/>}/>
+      <Route path='#notfound' element={<NotFound/>}/>
       <Route path='*' element={<NotFound/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/service' element={<Service/>}/>
-      <Route path='/servicedetails' element={<ServiceDetails/>}/>
-      <Route path='/blog' element={<Blog/>}/>
-      <Route path='/blogdetails' element={<BlogDetails/>}/>
-      <Route path='/contact' element={<Contact/>}/>
+      <Route path='#login' element={<Login/>}/>
+      <Route path='#service' element={<Service/>}/>
+      <Route path='#servicedetails' element={<ServiceDetails/>}/>
+      <Route path='#blog' element={<Blog/>}/>
+      <Route path='#blogdetails' element={<BlogDetails/>}/>
+      <Route path='#contact' element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
