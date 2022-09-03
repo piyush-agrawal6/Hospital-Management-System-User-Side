@@ -1,6 +1,7 @@
 import './login.css';
 import '../index.css';
 import logo from '../Assets/download.png';
+import { Link } from 'react-router-dom';
 
 function Login(){
     return <div className='section-area account-wraper2'>
@@ -19,12 +20,12 @@ function Login(){
                             <input type="password" className="form-control" placeholder="Password"></input>
                         </div>
                         <div className='form-group'>
-                            <a type='botton' className='btn mb-30 btn-lg btn-primary w-100' href='/'>Login</a>
-                            <a href='/'>Forget Password</a>
+                            <Link type='botton' className='btn mb-30 btn-lg btn-primary w-100' to={'/'}>Login</Link>
+                            <Link to={'/'}>Forget Password</Link>
                         </div>
                         <div className='text-center mt-40'>
                             <p className='mt-0'>Dont have any account?</p>
-                            <a href='/' className='btn btn-lg btn-secondary w-100'>Register</a>
+                            <Link to={'/'} className='btn btn-lg btn-secondary w-100'>Register</Link>
                         </div>
                         </form>
                     </div>

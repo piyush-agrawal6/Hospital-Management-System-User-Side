@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../Assets/download.png';
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { Link } from 'react-router-dom';
 
 window.onscroll = function() {myFunction()};
 
@@ -24,46 +24,46 @@ function NavBars(){
     return <div>
         <Navbar expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home">
+        <Link to={"/home"} className='navbar-brand'>
             <img src={logo} title="logo"/>
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Link to={'/home'} className='nav-link'>Home</Link>
             <NavDropdown title="Pages" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#about">About Us</NavDropdown.Item>
-              <NavDropdown.Item href="#ourteam">
+              <Link to={'/about'} className='dropdown-item'>About Us</Link>
+              <Link to={"/ourteam"} className='dropdown-item'>
                 Our Team
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#faqs">FAQ's</NavDropdown.Item>
-              <NavDropdown.Item href="#booking">
+              </Link>
+              <Link to={"/faqs"} className='dropdown-item'>FAQ's</Link>
+              <Link to={"/booking"} className='dropdown-item'>
                 Booking
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#notfound">
+              </Link>
+              <Link to={"/notfound"} className='dropdown-item'>
                 Error 404
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#login">
+              </Link>
+              <Link to={"/login"} className='dropdown-item'>
                 Login / Register
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#service">Service</NavDropdown.Item>
-              <NavDropdown.Item href="#servicedetails">
+              <Link to={"/service"} className='dropdown-item'>Service</Link>
+              <Link to={"/servicedetails"} className='dropdown-item'>
                 Service Details
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
             <NavDropdown title="Blog" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#blog">Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#blogdetails">
+              <Link to={"/blog"} className='dropdown-item'>Blogs</Link>
+              <Link to={"/blogdetails"} className='dropdown-item'>
                 Blog Details
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
-            <Nav.Link href="#Contact">Contact Us</Nav.Link>
+            <Link to={"/Contact"} className='nav-link'>Contact Us</Link>
             <Nav.Link> <FaSearch/> </Nav.Link>
-            <Nav.Link href="#Contact">
-                <a href='#contact'><button type='button'>Contact Us <span> <IoIosArrowForward /> </span></button></a>
-            </Nav.Link>
+            <Link to="/Contact" className='nav-link'>
+                <Link to={'/contact'}><button type='button'>Contact Us <span> <IoIosArrowForward /> </span></button></Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

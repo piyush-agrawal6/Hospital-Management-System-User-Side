@@ -21,10 +21,11 @@ import BlogDetails from './Components/blogdetails';
 import Contact from './Components/contact';
 import { BrowserRouter ,Routes , Route , HashRouter } from 'react-router-dom';
 import { HashRouter as Router } from 'react-router-dom';
+import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
     <Routes>
     <Route path='' element={<Home/>}/>
     <Route path='/' element={<Home/>}/>
@@ -41,7 +42,7 @@ root.render(
     <Route path='/blogdetails' element={<BlogDetails/>}/>
     <Route path='/contact' element={<Contact/>}/>
    </Routes>
-    </Router>
+    </HashRouter>
   </React.StrictMode>
 );
 

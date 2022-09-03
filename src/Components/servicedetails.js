@@ -11,6 +11,7 @@ import Down1 from '../Assets/downloadpdf.png';
 import Down2 from '../Assets/downloaddoc.png';
 import Accordion from 'react-bootstrap/Accordion';
 import './faqs.css';
+import { Link } from "react-router-dom";
 
 
 function ServiceDetails(){
@@ -24,10 +25,10 @@ function ServiceDetails(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Service Details
@@ -191,40 +192,40 @@ function ServiceDetails(){
                       <div className="widget">
                         <ul className="service-menu">
                            <li className="active">
-                            <a href="/servicedetails">
+                            <Link to={"/servicedetails"}>
                                 <span>Engine Diagnostics</span>
                                 <FaAngleRight/>
-                            </a>
+                            </Link>
                            </li>
                            <li>
-                            <a href="/servicedetails">
+                            <Link to={"/servicedetails"}>
                                 <span>Lube Oil and Filters</span>
                                 <FaAngleRight/>
-                            </a>
+                            </Link>
                            </li>
                            <li>
-                            <a href="/servicedetails">
+                            <Link to={"/servicedetails"}>
                                 <span>Belts and Hoses</span>
                                 <FaAngleRight/>
-                            </a>
+                            </Link>
                            </li>
                            <li>
-                            <a href="/servicedetails">
+                            <Link to={"/servicedetails"}>
                                 <span>Air Conditioning</span>
                                 <FaAngleRight/>
-                            </a>
+                            </Link>
                            </li>
                            <li>
-                            <a href="/servicedetails">
+                            <Link to={"/servicedetails"}>
                                 <span>Brake Repair</span>
                                 <FaAngleRight/>
-                            </a>
+                            </Link>
                            </li>
                            <li>
-                            <a href="/servicedetails">
+                            <Link to={"/servicedetails"}>
                                 <span>Tire and Wheel Services</span>
                                 <FaAngleRight/>
-                            </a>
+                            </Link>
                            </li>
                         </ul>
                       </div>
@@ -233,16 +234,16 @@ function ServiceDetails(){
                             <h5 className="title-head">
                                Download
                             </h5>
-                            <a href="/servicedetails" className="download-link">
+                            <Link to={"/servicedetails"} className="download-link">
                                 <img src={Down1}/>
                                 <h5 className="title">Download our Brochures</h5>
                                 <span>Download</span>
-                            </a>
-                            <a href="/servicedetails" className="download-link">
+                            </Link>
+                            <Link to={"/servicedetails"} className="download-link">
                                 <img src={Down2}/>
                                 <h5 className="title">Our Company Details</h5>
                                 <span>Download</span>
-                            </a>
+                            </Link>
                         </div>
                       </div>
                     </aside>

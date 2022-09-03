@@ -4,6 +4,7 @@ import NavBars from '../Sections/navbar';
 import Account from '../Sections/account';
 import Footer from '../Sections/footer';
 import ToTop from '../Sections/totop';
+import { Link } from 'react-router-dom';
 
 function Booking(){
     return <div>
@@ -16,10 +17,10 @@ function Booking(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Booking

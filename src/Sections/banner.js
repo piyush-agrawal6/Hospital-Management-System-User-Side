@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import headerImage from '../Assets/doctor.7c2bc96d.png';
 
 function Banner(){
@@ -8,7 +9,7 @@ function Banner(){
            <div className="col-lg-7 col-md-7">
              <h5 className='backimg'>We Provide All Health Care Solution</h5>
              <h2>Protect Your Health And Take Care To Of Your Health</h2>
-             <button><a href="#">Read More</a></button>
+             <button><Link to={'/about'}>Read More</Link></button>
            </div>
 
            <div className="col-lg-5 col-md-5">

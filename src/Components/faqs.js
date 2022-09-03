@@ -8,6 +8,7 @@ import Footer from '../Sections/footer';
 import ToTop from '../Sections/totop';
 import Accordion from 'react-bootstrap/Accordion';
 import { FaChevronDown } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function FaqS(){
     return <div>
@@ -20,10 +21,10 @@ function FaqS(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                Faq's

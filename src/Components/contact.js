@@ -7,6 +7,7 @@ import './contact.css';
 import { FiHome } from "react-icons/fi";
 import { FaMapMarkedAlt , FaIdBadge , FaFacebookF , FaTwitter , FaInstagram , FaLinkedin} from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 function Contact(){
     return <div>
@@ -19,10 +20,10 @@ function Contact(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Contact Us
@@ -92,19 +93,19 @@ function Contact(){
                                    </h6>
                                    <ul className="social-media">
                                     <li>
-                                        <a href="twitter.com">
+                                        <Link to={"twitter.com"}>
                                            <FaTwitter/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="instagram.com">
+                                        <Link to={"instagram.com"}>
                                            <FaInstagram/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="linkedin.com">
+                                        <Link to={"linkedin.com"}>
                                            <FaLinkedin/>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                                 </div>

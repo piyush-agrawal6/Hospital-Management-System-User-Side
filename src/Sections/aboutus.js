@@ -3,6 +3,7 @@ import abouti2 from '../Assets/pic-2.0593bc2f.jpg';
 import abouti3 from '../Assets/pic-3.fa689b10.jpg';
 import { FaAmbulance , FaBed , FaSyringe } from "react-icons/fa";
 import { IoWater } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function AboutUs(){
 
@@ -89,7 +90,7 @@ function AboutUs(){
                 </div>
               </div>
             </div>
-            <a href='/about' className='btn btn-primary shadow'>Read More</a>
+            <Link to={'/about'} className='btn btn-primary shadow'>Read More</Link>
           </div>
         </div>
        </div>

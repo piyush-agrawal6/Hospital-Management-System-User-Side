@@ -1,5 +1,6 @@
 import { FaAmbulance , FaSyringe , FaStethoscope , FaBriefcaseMedical  } from "react-icons/fa";
 import { TbMedicineSyrup } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const settings = {
@@ -44,7 +45,7 @@ function Services(){
                     <h2 className='title'>We Cover A Big Variety Of Medical Services</h2>
                     <p>We provide the special tips and advice’s of heath care treatment and high level of best.</p>
                 </div>
-                <a href='#' className='btn btn-secondary btn-lg shadow'>All Services</a>
+                <Link to={'/service'} className='btn btn-secondary btn-lg shadow'>All Services</Link>
             </div>
             <Slider className='col-xl-8 col-md-12 mb-15' {...settings}>
                 <div className='feature-container feature-bx2 feature2'>
@@ -57,7 +58,7 @@ function Services(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Surgery</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='/service'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 <div className='feature-container feature-bx2 feature2'>
@@ -70,7 +71,7 @@ function Services(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Vaccine</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='/service'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 <div className='feature-container feature-bx2 feature2'>
@@ -83,7 +84,7 @@ function Services(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Emergency</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='/service'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 <div className='feature-container feature-bx2 feature2'>
@@ -96,7 +97,7 @@ function Services(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Diagnostics</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='/service'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 <div className='feature-container feature-bx2 feature2'>
@@ -109,7 +110,7 @@ function Services(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Treatment</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='/service'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
             </Slider>

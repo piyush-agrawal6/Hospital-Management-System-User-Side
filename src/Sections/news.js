@@ -10,6 +10,7 @@ import member3 from '../Assets/doc33.jpg';
 import member4 from '../Assets/doc44.jpg';
 import member5 from '../Assets/doc55.jpg';
 import { FaRegCalendarAlt , FaChevronRight } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const settings = {
     dots: false,
@@ -50,17 +51,17 @@ function News(){
             <Slider className="blog-slide" {...settings}>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg1}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member1}/>
                             John deo
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -68,27 +69,27 @@ function News(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">In this hospital there are special surgeon</a>
+                        <Link to={"/blogdetails"}>In this hospital there are special surgeon</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg2}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member2}/>
                             Peter Packer
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -96,27 +97,27 @@ function News(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Can you get a diflucan prescription online?</a>
+                        <Link to={"/blogdetails"}>Can you get a diflucan prescription online?</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg3}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member3}/>
                             Sonar Moyna
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -124,27 +125,27 @@ function News(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Why Is Skin Surgeon Considered Underrated</a>
+                        <Link to={"/blogdetails"}>Why Is Skin Surgeon Considered Underrated</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg4}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member4}/>
                             Kalina Mollika
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -152,27 +153,27 @@ function News(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Dental Care for Women is very important</a>
+                        <Link to={"/blogdetails"}>Dental Care for Women is very important</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg5}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member5}/>
                             Michel
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -180,12 +181,12 @@ function News(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Health Will Be A Thing Of The Past And Here's Why</a>
+                        <Link to={"/blogdetails"}>Health Will Be A Thing Of The Past And Here's Why</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
             </Slider>

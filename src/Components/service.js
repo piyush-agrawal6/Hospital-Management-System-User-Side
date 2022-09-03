@@ -9,6 +9,7 @@ import Team from "../Sections/Team";
 import News from "../Sections/news";
 import Footer from "../Sections/footer";
 import ToTop from "../Sections/totop";
+import { Link } from "react-router-dom";
 
 function Service(){
 
@@ -22,10 +23,10 @@ function Service(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Services
@@ -40,7 +41,7 @@ function Service(){
             <div className='container-fluid'>
           <div className='row align-items-center'>
                 <div className="col-lg-4 col-md-6 mb-15">
-                <div className=' feature-container feature-bx2 feature2'>
+                <div className='feature-container feature-bx2 feature2'>
                     <div className='feature-box-xl mb-30'>
                         <span className='icon-cell'>
                            <FaBriefcaseMedical/>
@@ -50,12 +51,12 @@ function Service(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Surgery</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='#'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-15">
-                <div className=' feature-container feature-bx2 feature2'>
+                <div className='feature-container feature-bx2 feature2'>
                     <div className='feature-box-xl mb-30'>
                         <span className='icon-cell'>
                            <FaBriefcaseMedical/>
@@ -65,12 +66,12 @@ function Service(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Surgery</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='#'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-15">
-                <div className= ' feature-container feature-bx2 feature2'>
+                <div className='feature-container feature-bx2 feature2'>
                     <div className='feature-box-xl mb-30'>
                         <span className='icon-cell'>
                            <FaSyringe/>
@@ -80,12 +81,12 @@ function Service(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Vaccine</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='#'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-15">
-                <div className= ' feature-container feature-bx2 feature2'>
+                <div className='feature-container feature-bx2 feature2'>
                     <div className='feature-box-xl mb-30'>
                         <span className='icon-cell'>
                            <FaAmbulance/>
@@ -95,12 +96,12 @@ function Service(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Emergency</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='#'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-15">
-                <div className= ' feature-container feature-bx2 feature2'>
+                <div className='feature-container feature-bx2 feature2'>
                     <div className='feature-box-xl mb-30'>
                         <span className='icon-cell'>
                            <FaStethoscope/>
@@ -110,12 +111,12 @@ function Service(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Diagnostics</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='#'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-15">
-                <div className=' feature-container feature-bx2 feature2'>
+                <div className='feature-container feature-bx2 feature2'>
                     <div className='feature-box-xl mb-30'>
                         <span className='icon-cell'>
                            <TbMedicineSyrup/>
@@ -125,7 +126,7 @@ function Service(){
                     <div className='icon-content'>
                         <h3 className='ttr-title'>Treatment</h3>
                         <p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
-                        <a className='btn btn-primary light' href='#'>View More</a>
+                        <Link className='btn btn-primary light' to={'/servicedetails'}>View More</Link>
                     </div>
                 </div>
                 </div>

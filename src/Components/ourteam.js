@@ -8,6 +8,7 @@ import member4 from '../Assets/member4.9045579a.jpg';
 import member5 from '../Assets/member5.24eb1821.jpg';
 import member6 from '../Assets/member6.be2a77ad.jpg';
 import ToTop from '../Sections/totop';
+import { Link } from 'react-router-dom';
 
 function OurTeam(){
 
@@ -21,10 +22,10 @@ function OurTeam(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Our Team
@@ -50,19 +51,19 @@ function OurTeam(){
                             </div>
                             <ul className="social-media">
                                 <li>
-                                    <a href="twitter.com">
+                                    <Link to={"twitter.com"}>
                                       <FaTwitter/>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="instagram.com">
+                                    <Link to={"instagram.com"}>
                                       <FaInstagram/>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="linkedin.com">
+                                    <Link to={"linkedin.com"}>
                                       <FaLinkedin/>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -80,19 +81,19 @@ function OurTeam(){
                             </div>
                             <ul className="social-media">
                                 <li>
-                                    <a href="twitter.com">
+                                    <Link to={"twitter.com"}>
                                       <FaTwitter/>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="instagram.com">
+                                    <Link to={"instagram.com"}>
                                       <FaInstagram/>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="linkedin.com">
+                                    <Link to={"linkedin.com"}>
                                       <FaLinkedin/>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -110,19 +111,19 @@ function OurTeam(){
                             </div>
                             <ul className="social-media">
                                 <li>
-                                    <a href="twitter.com">
+                                    <Link to={"twitter.com"}>
                                       <FaTwitter/>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="instagram.com">
+                                    <Link to={"instagram.com"}>
                                       <FaInstagram/>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="linkedin.com">
+                                    <Link to={"linkedin.com"}>
                                       <FaLinkedin/>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

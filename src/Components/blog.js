@@ -5,6 +5,7 @@ import './about.css';
 import '../index.css';
 import { FiHome } from "react-icons/fi";
 import { FaRegCalendarAlt , FaChevronRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Cardimg1 from '../Assets/pic1.a3848a11.jpg';
 import Cardimg2 from '../Assets/pic2.67db6c47.jpg';
 import Cardimg3 from '../Assets/pic3.89b83151.jpg';
@@ -31,10 +32,10 @@ function Blog(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Blog Grid 3
@@ -51,17 +52,17 @@ function Blog(){
                <div className='col-lg-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg1}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member1}/>
                             John deo
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -69,29 +70,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">In this hospital there are special surgeon</a>
+                        <Link to={"/blogdetails"}>In this hospital there are special surgeon</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg2}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member2}/>
                             Peter Packer
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -99,29 +100,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Can you get a diflucan prescription online?</a>
+                        <Link to={"/blogdetails"}>Can you get a diflucan prescription online?</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg3}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member3}/>
                             Sonar Moyna
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -129,29 +130,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Why Is Skin Surgeon Considered Underrated</a>
+                        <Link to={"/blogdetails"}>Why Is Skin Surgeon Considered Underrated</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg4}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member4}/>
                             Kalina Mollika
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -159,29 +160,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Dental Care for Women is very important</a>
+                        <Link to={"/blogdetails"}>Dental Care for Women is very important</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg5}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member5}/>
                             Michel
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -189,29 +190,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Health Will Be A Thing Of The Past And Here's Why</a>
+                        <Link to={"/blogdetails"}>Health Will Be A Thing Of The Past And Here's Why</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg6}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member1}/>
                             Peter Packer
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -219,29 +220,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Can you get a diflucan prescription online?</a>
+                        <Link to={"/blogdetails"}>Can you get a diflucan prescription online?</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg7}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member2}/>
                             Sonar Moyna
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -249,29 +250,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Ten Gigantic Influences Of Health</a>
+                        <Link to={"/blogdetails"}>Ten Gigantic Influences Of Health</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg8}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member3}/>
                             Kalina
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -279,29 +280,29 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Ten Gigantic Influences Of Health</a>
+                        <Link to={"/blogdetails"}>Ten Gigantic Influences Of Health</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>
                <div className='col-xl-4 col-md-6 mb-30'>
                <div className="blog-card">
                 <div className="post-media">
-                    <a href="/blogdetails">
+                    <Link to={"/blogdetails"}>
                         <img src={Cardimg9}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="post-info">
                     <ul className="post-meta">
                        <li className="author">
-                        <a href="/blogdetails">
+                        <Link to={"/blogdetails"}>
                             <img src={member4}/>
                             Michel
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -309,12 +310,12 @@ function Blog(){
                        </li>
                     </ul>
                     <h5 className="post-title">
-                        <a href="/blogdetails">Everyone need to go Dentist regularly</a>
+                        <Link to={"/blogdetails"}>Everyone need to go Dentist regularly</Link>
                     </h5>
-                    <a href="/blogdetails" className="btn btn-outline-primary btn-sm">
+                    <Link to={"/blogdetails"} className="btn btn-outline-primary btn-sm">
                        Read More
                       <FaChevronRight className="btn-icon-bx"/>
-                    </a>
+                    </Link>
                 </div>
                </div>
                </div>

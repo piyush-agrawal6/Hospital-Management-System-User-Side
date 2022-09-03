@@ -10,6 +10,7 @@ import Cardm4 from '../Assets/pic3.3275b9e6.jpg';
 import Cardm5 from '../Assets/pic4.f008bc42.jpg';
 import Cardm6 from '../Assets/pic6.c8e86d3c.jpg';
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import member2 from '../Assets/doc22.jpg';
 import member1 from '../Assets/doc11.jpg';
 import Comimg from '../Assets/downloadcom1.jpg';
@@ -32,10 +33,10 @@ function BlogDetails(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Blog Details
@@ -57,10 +58,10 @@ function BlogDetails(){
                         <div className="info-bx">
                         <ul className="post-meta">
                        <li className="author">
-                        <a href="/">
+                        <Link to={"/blogdetails"}>
                             <img src={member1}/>
                             John deo
-                        </a>
+                        </Link>
                        </li>
                        <li className="date">
                         <FaRegCalendarAlt/>
@@ -113,9 +114,9 @@ function BlogDetails(){
                         <div className="ttr-post-footer">
                             <div className="post-tags">
                                 <strong>Tags:</strong>
-                                <a href="/blogdetails">Health</a>
-                                <a href="/blogdetails">Growth</a>
-                                <a href="/blogdetails">Life</a>
+                                <Link to={"/blogdetails"}>Health</Link>
+                                <Link to={"/blogdetails"}>Growth</Link>
+                                <Link to={"/blogdetails"}>Life</Link>
                             </div>
                             <div className="share-post ml-auto">
                                 <ul className="social-media mb-0">
@@ -123,24 +124,24 @@ function BlogDetails(){
                                         <strong>Share:</strong>
                                     </li>
                                     <li>
-                                        <a href="facebook.com">
+                                        <Link to={"facebook.com"}>
                                            <FaFacebookF/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="twitter.com">
+                                        <Link to={"twitter.com"}>
                                            <FaTwitter/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="instagram.com">
+                                        <Link to={"instagram.com"}>
                                            <FaInstagram/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="linkedin.com">
+                                        <Link to={"linkedin.com"}>
                                            <FaLinkedin/>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -160,24 +161,24 @@ function BlogDetails(){
                                 </p>
                                 <ul className="social-media mb-0">
                                     <li>
-                                        <a href="facebook.com">
+                                        <Link to={"facebook.com"}>
                                            <FaFacebookF/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="twitter.com">
+                                        <Link to={"twitter.com"}>
                                            <FaTwitter/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="instagram.com">
+                                        <Link to={"instagram.com"}>
                                            <FaInstagram/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="linkedin.com">
+                                        <Link to={"linkedin.com"}>
                                            <FaLinkedin/>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -196,7 +197,7 @@ function BlogDetails(){
                                                     <cite className="fn">George</cite>
                                                     <span className="says">says:</span>
                                                     <div className="comment-meta">
-                                                        <a href="/blogdetails">May 09, 2021 at 10:45 am</a>
+                                                        <Link to={"/blogdetails"}>May 09, 2021 at 10:45 am</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -206,7 +207,7 @@ function BlogDetails(){
                                                when an unknown printer took a galley.
                                             </p>
                                             <div className="reply">
-                                                <a className="comment-reply-link" href="/blogdetails">Reply</a>
+                                                <Link className="comment-reply-link" to={"/blogdetails"}>Reply</Link>
                                             </div>
                                         </div>
                                         <ol className="children">
@@ -218,7 +219,7 @@ function BlogDetails(){
                                                     <cite className="fn">Falikaz</cite>
                                                     <span className="says">says:</span>
                                                     <div className="comment-meta">
-                                                        <a href="/blogdetails">May 09, 2021 at 10:45 am</a>
+                                                        <Link to={"/blogdetails"}>May 09, 2021 at 10:45 am</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,7 +229,7 @@ function BlogDetails(){
                                                when an unknown printer took a galley.
                                             </p>
                                             <div className="reply">
-                                                <a className="comment-reply-link" href="/blogdetails">Reply</a>
+                                                <Link className="comment-reply-link" to={"/blogdetails"}>Reply</Link>
                                             </div>
                                             </div>
                                             </li>
@@ -242,7 +243,7 @@ function BlogDetails(){
                                                     <cite className="fn">Sonar</cite>
                                                     <span className="says">says:</span>
                                                     <div className="comment-meta">
-                                                        <a href="/blogdetails">May 09, 2021 at 10:45 am</a>
+                                                        <Link to={"/blogdetails"}>May 09, 2021 at 10:45 am</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -252,7 +253,7 @@ function BlogDetails(){
                                                when an unknown printer took a galley.
                                             </p>
                                             <div className="reply">
-                                                <a className="comment-reply-link" href="/blogdetails">Reply</a>
+                                                <Link className="comment-reply-link" to={"/blogdetails"}>Reply</Link>
                                             </div>
                                         </div>
                                     </li>
@@ -264,7 +265,7 @@ function BlogDetails(){
                                                     <cite className="fn">Michel</cite>
                                                     <span className="says">says:</span>
                                                     <div className="comment-meta">
-                                                        <a href="/blogdetails">May 09, 2021 at 10:45 am</a>
+                                                        <Link to={"/blogdetails"}>May 09, 2021 at 10:45 am</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -274,7 +275,7 @@ function BlogDetails(){
                                                when an unknown printer took a galley.
                                             </p>
                                             <div className="reply">
-                                                <a className="comment-reply-link" href="/blogdetails">Reply</a>
+                                                <Link className="comment-reply-link" to={"/blogdetails"}>Reply</Link>
                                             </div>
                                         </div>
                                     </li>
@@ -324,7 +325,7 @@ function BlogDetails(){
                                     <div className="ttr-post-info">
                                         <div className="ttr-post-header">
                                             <h6 className="post-title">
-                                                <a href="/blogdetails">Precious Tips To Help You Get Better.</a>
+                                                <Link to={"/blogdetails"}>Precious Tips To Help You Get Better.</Link>
                                             </h6>
                                         </div>
                                         <ul className="post-meta">
@@ -342,7 +343,7 @@ function BlogDetails(){
                                     <div className="ttr-post-info">
                                         <div className="ttr-post-header">
                                             <h6 className="post-title">
-                                                <a href="/blogdetails">Ten Doubts You Should Clarify About.</a>
+                                                <Link to={"/blogdetails"}>Ten Doubts You Should Clarify About.</Link>
                                             </h6>
                                         </div>
                                         <ul className="post-meta">
@@ -360,7 +361,7 @@ function BlogDetails(){
                                     <div className="ttr-post-info">
                                         <div className="ttr-post-header">
                                             <h6 className="post-title">
-                                                <a href="/blogdetails">The 10 Steps Needed For Putting.</a>
+                                                <Link to={"/blogdetails"}>The 10 Steps Needed For Putting.</Link>
                                             </h6>
                                         </div>
                                         <ul className="post-meta">
@@ -401,15 +402,15 @@ function BlogDetails(){
                         <div className="widget widget_tag_cloud">
                         <h4 className="widget-title">Tags</h4>
                         <div className="tagcloud">
-                            <a href="/blogdetails">Improvement</a>
-                            <a href="/blogdetails">Health</a>
-                            <a href="/blogdetails">Life</a>
-                            <a href="/blogdetails">Covid</a>
-                            <a href="/blogdetails">Healthy</a>
-                            <a href="/blogdetails">Growth</a>
-                            <a href="/blogdetails">Education</a>
-                            <a href="/blogdetails">Manage</a>
-                            <a href="/blogdetails">General</a>
+                            <Link to={"/blogdetails"}>Improvement</Link>
+                            <Link to={"/blogdetails"}>Health</Link>
+                            <Link to={"/blogdetails"}>Life</Link>
+                            <Link to={"/blogdetails"}>Covid</Link>
+                            <Link to={"/blogdetails"}>Healthy</Link>
+                            <Link to={"/blogdetails"}>Growth</Link>
+                            <Link to={"/blogdetails"}>Education</Link>
+                            <Link to={"/blogdetails"}>Manage</Link>
+                            <Link to={"/blogdetails"}>General</Link>
                         </div>
                         </div>
                     </aside>

@@ -8,6 +8,7 @@ import './about.css';
 import Services2 from "../Sections/services2";
 import { FiHome } from "react-icons/fi";
 import Team from "../Sections/Team";
+import { Link } from "react-router-dom";
 
 function About(){
     return <div>
@@ -20,10 +21,10 @@ function About(){
                     <nav aria-label="breadcrumb" className="breadcrumb-row">
                         <ul className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="/home">
+                                <Link to={"/home"}>
                                     <FiHome/>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 About Us

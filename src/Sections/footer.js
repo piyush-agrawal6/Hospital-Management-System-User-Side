@@ -1,5 +1,6 @@
 import logo from '../Assets/download.png';
 import { FaPhoneAlt , FaFacebookF , FaTwitter , FaInstagram , FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 function Footer(){
 
     return <div>
@@ -10,9 +11,9 @@ function Footer(){
                     <div className="col-xl-3 col-lg-3 col-md-6">
                         <div className="widget widget-info">
                             <div className="footer-logo">
-                               <a href="/">
+                               <Link to={'/'}>
                                 <img src={logo}/>
-                               </a>
+                               </Link>
                             </div>
                             <div className='ft-contact'>
                                 <p>Lorem ipsum is dolor sit amet, 
@@ -35,34 +36,34 @@ function Footer(){
                             <h3 className='footer-title'>Quick Links</h3>
                             <ul>
                                 <li>
-                                    <a href='/about'>
+                                    <Link to={'/about'}>
                                         <span>About Us</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/service'>
+                                    <Link to={'/service'}>
                                         <span>Services</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/booking'>
+                                    <Link to={'/booking'}>
                                         <span>Booking</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/faqs'>
+                                    <Link to={'/faqs'}>
                                         <span>Faq's</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/blog'>
+                                    <Link to={'/blog'}>
                                         <span>Blogs</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/ourteam'>
+                                    <Link to={'/ourteam'}>
                                         <span>Our Team</span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -72,34 +73,34 @@ function Footer(){
                             <h3 className='footer-title'>Our Service</h3>
                             <ul>
                                 <li>
-                                    <a href='/servicedetails'>
+                                    <Link to={'/servicedetails'}>
                                         <span>Dental Care</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/servicedetails'>
+                                    <Link to={'/servicedetails'}>
                                         <span>Cardiac Clinic</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/servicedetails'>
+                                    <Link to={'/servicedetails'}>
                                         <span>Massege Therapy</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/servicedetails'>
+                                    <Link to={'/servicedetails'}>
                                         <span>Cardiology</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/servicedetails'>
+                                    <Link to={'/servicedetails'}>
                                         <span>Precise Diagnosis</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href='/servicedetails'>
+                                    <Link to={'/servicedetails'}>
                                         <span>Abmbulance Services</span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -117,24 +118,24 @@ function Footer(){
                             <div className='footer-social-link'>
                                 <ul>
                                     <li>
-                                        <a href='facebook.com'>
+                                        <Link to={'facebook.com'}>
                                           <FaFacebookF/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href='twitter.com'>
+                                        <Link to={'twitter.com'}>
                                           <FaTwitter/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href='instagram.com'>
+                                        <Link to={'instagram.com'}>
                                           <FaInstagram/>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href='linkedin.com'>
+                                        <Link to={'linkedin.com'}>
                                           <FaLinkedin/>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -149,7 +150,7 @@ function Footer(){
                     <div className='col-12 text-center'>
                         <p className='copyright-text'>
                            Copyright © 2022 Design & Developed by 
-                           <a href='/' className='text-secondary'>KareemWael</a>
+                           <Link to={'/home'} className='text-secondary'>KareemWael</Link>
                         </p>
                     </div>
                 </div>

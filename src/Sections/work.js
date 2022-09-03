@@ -1,4 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Work(){
     return <div>
@@ -17,10 +18,10 @@ function Work(){
                         <p>It is a long established fact that a reader will
                              be distracted by the readable content of.</p>
                     </div>
-                    <a href="/" className="btn btn-primary light">
+                    <Link to={'/contact'} className="btn btn-primary light">
                         View More
                         <IoIosArrowForward/>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30">
@@ -31,10 +32,10 @@ function Work(){
                         <p>It is a long established fact that a reader will
                              be distracted by the readable content of.</p>
                     </div>
-                    <a href="/" className="btn btn-primary light">
+                    <Link to={'/contact'} className="btn btn-primary light">
                         View More
                         <IoIosArrowForward/>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="col-lg-4 col-sm-6 mb-30">
@@ -45,10 +46,10 @@ function Work(){
                         <p>It is a long established fact that a reader will
                              be distracted by the readable content of.</p>
                     </div>
-                    <a href="/" className="btn btn-primary light">
+                    <Link to={'/contact'} className="btn btn-primary light">
                         View More
                         <IoIosArrowForward/>
-                    </a>
+                    </Link>
                 </div>
             </div>
           </div>
