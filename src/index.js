@@ -19,9 +19,7 @@ import ServiceDetails from './Components/servicedetails';
 import Blog from './Components/blog';
 import BlogDetails from './Components/blogdetails';
 import Contact from './Components/contact';
-import { BrowserRouter ,Routes , Route , HashRouter } from 'react-router-dom';
-import { HashRouter as Router } from 'react-router-dom';
-import App from './App';
+import {Routes , Route , HashRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -30,17 +28,17 @@ root.render(
     <Route path='' element={<Home/>}/>
     <Route path='/' element={<Home/>}/>
     <Route path='/home' element={<Home/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/ourteam' element={<OurTeam/>}/>
-    <Route path='/Faqs' element={<FaqS/>}/>
-    <Route path='/booking' element={<Booking/>}/>
-    <Route path='/notfound' element={<NotFound/>}/>
-    <Route path='/login' element={<Login/>}/>
-    <Route path='/service' element={<Service/>}/>
-    <Route path='/servicedetails' element={<ServiceDetails/>}/>
-    <Route path='/blog' element={<Blog/>}/>
-    <Route path='/blogdetails' element={<BlogDetails/>}/>
-    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/#/about' element={<About/>}/>
+    <Route path='/#/ourteam' element={<OurTeam/>}/>
+    <Route path='/#/Faqs' element={<FaqS/>}/>
+    <Route path='/#/booking' element={<Booking/>}/>
+    <Route path='/#/notfound' element={<NotFound/>}/>
+    <Route path='/#/login' element={<Login/>}/>
+    <Route path='/#/service' element={<Service/>}/>
+    <Route path='/#/servicedetails' element={<ServiceDetails/>}/>
+    <Route path='/#/blog' element={<Blog/>}/>
+    <Route path='/#/blogdetails' element={<BlogDetails/>}/>
+    <Route path='/#/contact' element={<Contact/>}/>
    </Routes>
     </HashRouter>
   </React.StrictMode>
