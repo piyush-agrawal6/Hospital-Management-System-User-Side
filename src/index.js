@@ -29,7 +29,7 @@ root.render(
       <Route path='/reactpro' element={<Home/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path='/home' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
+      <Route path='/reactpro/about' element={<About/>}/>
       <Route path='/ourteam' element={<OurTeam/>}/>
       <Route path='/faqs' element={<FaqS/>}/>
       <Route path='/booking' element={<Booking/>}/>
