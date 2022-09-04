@@ -5,7 +5,7 @@
 }
 
 .error-404 .error-title {
-    font-size: 180px;
+    font-size: 180px !important;
     line-height: 180px;
     color: #1f2278;
     font-family: "Montserrat",sans-serif;
