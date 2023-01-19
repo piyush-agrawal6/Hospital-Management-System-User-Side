@@ -6,7 +6,7 @@ import logo from "../Assets/download.png";
 import Logo from "../Assets/Logo.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
-
+import "./navbar.css";
 window.onscroll = function () {
   myFunction();
 };
@@ -58,10 +58,9 @@ function NavBars() {
               <Link to="/Contact" className="nav-link">
                 <Link to={"/report"}>
                   <button type="button">
-                    Report{" "}
+                    Report
                     <span>
-                      {" "}
-                      <IoIosArrowForward />{" "}
+                      <IoIosArrowForward />
                     </span>
                   </button>
                 </Link>
