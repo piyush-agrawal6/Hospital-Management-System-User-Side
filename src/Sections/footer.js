@@ -103,26 +103,26 @@ function Footer() {
               <div className="col-xl-3 col-lg-3 col-md-6">
                 <div className="widget widget-form">
                   <h3 className="footer-title">More About us</h3>
-                  
+
                   <div className="footer-social-link">
                     <ul>
                       <li>
-                        <Link to={"facebook.com"}>
+                        <Link to="">
                           <FaFacebookF />
                         </Link>
                       </li>
                       <li>
-                        <Link to={"twitter.com"}>
+                        <Link to="">
                           <FaTwitter />
                         </Link>
                       </li>
                       <li>
-                        <Link to={"instagram.com"}>
+                        <Link to="">
                           <FaInstagram />
                         </Link>
                       </li>
                       <li>
-                        <Link to={"linkedin.com"}>
+                        <Link to="">
                           <FaLinkedin />
                         </Link>
                       </li>
@@ -139,9 +139,13 @@ function Footer() {
               <div className="col-12 text-center">
                 <p className="copyright-text">
                   Copyright © 2023 Redesign & Redeveloped by
-                  <Link to={"/home"} className="text-secondary">
+                  <a
+                    href="https://github.com/piyush-agrawal6"
+                    className="text-secondary"
+                    target="_blank"
+                  >
                     Piyush Agrawal
-                  </Link>
+                  </a>
                 </p>
               </div>
             </div>

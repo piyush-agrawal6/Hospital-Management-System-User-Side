@@ -312,3 +312,8 @@ h4 {
 .blog-slide .blog-card {
   margin: 0px;
 }
+@media (max-width: 824px) {
+  .page-banner h1 {
+    font-size: 32px;
+  }
+}
