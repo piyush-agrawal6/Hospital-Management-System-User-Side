@@ -55,11 +55,7 @@ function Footer() {
                         <span>Booking</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to={"/faqs"}>
-                        <span>Faq's</span>
-                      </Link>
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -74,12 +70,7 @@ function Footer() {
                     </li>
                     <li>
                       <Link to="">
-                        <span>Cardiac Clinic</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="">
-                        <span>Massage Therapy</span>
+                        <span>ENT Clinic</span>
                       </Link>
                     </li>
                     <li>

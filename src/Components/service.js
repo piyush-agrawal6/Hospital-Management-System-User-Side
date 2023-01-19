@@ -9,7 +9,7 @@ import "./about.css";
 import "../index.css";
 import NavBars from "../Sections/navbar";
 import { FiHome } from "react-icons/fi";
-import Services2 from "../Sections/services2";
+import { RiSurgicalMaskFill } from "react-icons/ri";
 import Footer from "../Sections/footer";
 import ToTop from "../Sections/totop";
 import { Link } from "react-router-dom";
@@ -47,16 +47,12 @@ function Service() {
               <div className="feature-container feature-bx2 feature2">
                 <div className="feature-box-xl mb-30">
                   <span className="icon-cell">
-                    <FaBriefcaseMedical />
+                    <RiSurgicalMaskFill />
                   </span>
                 </div>
 
                 <div className="icon-content">
-                  <h3 className="ttr-title">Surgery</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                 
+                  <h3 className="ttr-title">Operations</h3>
                 </div>
               </div>
             </div>
@@ -70,10 +66,6 @@ function Service() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Surgery</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                 
                 </div>
               </div>
             </div>
@@ -87,10 +79,6 @@ function Service() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Vaccine</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                 
                 </div>
               </div>
             </div>
@@ -104,10 +92,6 @@ function Service() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Emergency</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                  
                 </div>
               </div>
             </div>
@@ -121,10 +105,6 @@ function Service() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Diagnostics</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                 
                 </div>
               </div>
             </div>
@@ -138,17 +118,12 @@ function Service() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Treatment</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                 
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Services2 />
       <Footer />
       <ToTop />
     </div>

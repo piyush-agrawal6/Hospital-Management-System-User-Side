@@ -51,7 +51,7 @@ function Services() {
                 </h2>
                 <p>
                   We provide the special tips and advice’s of heath care
-                  treatment and high level of best.
+                  treatment.
                 </p>
               </div>
               <Link to={"/service"} className="btn btn-secondary btn-lg shadow">
@@ -71,10 +71,6 @@ function Services() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Surgery</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                  
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -86,10 +82,6 @@ function Services() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Vaccine</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                  
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -101,10 +93,6 @@ function Services() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Emergency</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -116,10 +104,6 @@ function Services() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Diagnostics</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                 
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -131,10 +115,6 @@ function Services() {
 
                 <div className="icon-content">
                   <h3 className="ttr-title">Treatment</h3>
-                  <p>
-                    Phasellus venenatis porta rhoncus. Integer et viverra felis.
-                  </p>
-                
                 </div>
               </div>
             </Slider>

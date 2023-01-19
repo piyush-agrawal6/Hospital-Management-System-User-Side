@@ -7,7 +7,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-
 function NavBars() {
   return (
     <div className="navStick">
@@ -26,22 +25,21 @@ function NavBars() {
                 <Link to={"/team"} className="dropdown-item">
                   Creators
                 </Link>
-                <Link to={"/about"} className="dropdown-item">
-                  About
-                </Link>
-                <Link to={"/faqs"} className="dropdown-item">
-                  FAQ's
-                </Link>
                 <Link to={"/service"} className="dropdown-item">
-                  Service
+                  Services
                 </Link>
               </NavDropdown>
               <Link to={"/booking"} className="nav-link">
                 Booking
               </Link>
-              <Link to={"/login"} className="nav-link">
-                Login
-              </Link>
+              <NavDropdown title="Login" id="basic-nav-dropdown">
+                <Link to={"/login"} className="dropdown-item">
+                  Patient
+                </Link>
+                <a href="a" className="dropdown-item">
+                  Doctor
+                </a>
+              </NavDropdown>
               <Link to="/Contact" className="nav-link">
                 <Link to={"/report"}>
                   <button type="button">
