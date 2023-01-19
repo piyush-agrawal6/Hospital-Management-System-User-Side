@@ -7,10 +7,10 @@ import {
 import { TbMedicineSyrup } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-
+import "./services.css";
 const settings = {
-  dots: false,
-  arrows: false,
+  dots: true,
+  arrows: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
@@ -28,11 +28,10 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
       },
     },
     {
-      breakpoint: 300,
+      breakpoint: 450,
       settings: "unslick",
     },
   ],
@@ -59,7 +58,10 @@ function Services() {
                 All Services
               </Link>
             </div>
-            <Slider className="col-xl-8 col-md-12 mb-15" {...settings}>
+            <Slider
+              className="col-xl-8 col-md-12 mb-15 serviceSlider"
+              {...settings}
+            >
               <div className="feature-container feature-bx2 feature2">
                 <div className="feature-box-xl mb-30">
                   <span className="icon-cell">
@@ -72,10 +74,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/service"}
-                  >
+                  <Link className="btn btn-primary light" to={"/service"}>
                     View More
                   </Link>
                 </div>
@@ -92,10 +91,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/service"}
-                  >
+                  <Link className="btn btn-primary light" to={"/service"}>
                     View More
                   </Link>
                 </div>
@@ -112,10 +108,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/service"}
-                  >
+                  <Link className="btn btn-primary light" to={"/service"}>
                     View More
                   </Link>
                 </div>
@@ -132,10 +125,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/service"}
-                  >
+                  <Link className="btn btn-primary light" to={"/service"}>
                     View More
                   </Link>
                 </div>
@@ -152,10 +142,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/service"}
-                  >
+                  <Link className="btn btn-primary light" to={"/service"}>
                     View More
                   </Link>
                 </div>

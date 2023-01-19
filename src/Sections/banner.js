@@ -8,8 +8,8 @@ function Banner() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7 col-md-7">
-            <h5 className="backimg">We Provide All Health Care Solution</h5>
-            <h2>Protect Your Health And Take Care To Of Your Health</h2>
+            <h5 className="backimg">Adding Care to your Life.</h5>
+            <h2>Protecting and Taking Care To Of Your Health</h2>
             <button>
               <Link to={"/about"}>Read More</Link>
             </button>

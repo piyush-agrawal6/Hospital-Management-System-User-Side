@@ -123,6 +123,6 @@ nav .navbar-nav button:hover {
 
 @media (max-width: 550px) {
   .navbar-brand img {
-       width: 130px;
+    width: 130px;
   }
 }

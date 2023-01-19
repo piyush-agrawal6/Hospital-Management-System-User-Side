@@ -1,6 +1,6 @@
-import logo from "../Assets/download.png";
+import Logo from "../Assets/Logo.png";
+import "./footer.css";
 import {
-  FaPhoneAlt,
   FaFacebookF,
   FaTwitter,
   FaInstagram,
@@ -18,23 +18,11 @@ function Footer() {
                 <div className="widget widget-info">
                   <div className="footer-logo">
                     <Link to={"/"}>
-                      <img src={logo} alt="img" />
+                      <img src={Logo} alt="img" />
                     </Link>
                   </div>
                   <div className="ft-contact">
-                    <p>
-                      Lorem ipsum is dolor sit amet, csectetur adipiscing elit,
-                      dolore smod tempor incididunt ut labore et.
-                    </p>
-                    <div className="contact-bx">
-                      <div className="icon">
-                        <FaPhoneAlt />
-                      </div>
-                      <div className="contact-number">
-                        <span>Contact Us</span>
-                        <h4 className="number">+01 123 456 7890</h4>
-                      </div>
-                    </div>
+                    <p>Protecting and Taking Care To Of Your Health</p>
                   </div>
                 </div>
               </div>
@@ -42,6 +30,16 @@ function Footer() {
                 <div className="widget footer-widget ml-50">
                   <h3 className="footer-title">Quick Links</h3>
                   <ul>
+                    <li>
+                      <Link to={"/ourteam"}>
+                        <span>Doctors</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/team"}>
+                        <span>Creators</span>
+                      </Link>
+                    </li>
                     <li>
                       <Link to={"/about"}>
                         <span>About Us</span>
@@ -62,51 +60,41 @@ function Footer() {
                         <span>Faq's</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link to={"/blog"}>
-                        <span>Blogs</span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={"/ourteam"}>
-                        <span>Our Team</span>
-                      </Link>
-                    </li>
                   </ul>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-3 col-6">
                 <div className="widget footer-widget ml-50">
-                  <h3 className="footer-title">Our Service</h3>
+                  <h3 className="footer-title">Our Services</h3>
                   <ul>
                     <li>
-                      <Link to={"/servicedetails"}>
+                      <Link to="">
                         <span>Dental Care</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/servicedetails"}>
+                      <Link to="">
                         <span>Cardiac Clinic</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/servicedetails"}>
-                        <span>Massege Therapy</span>
+                      <Link to="">
+                        <span>Massage Therapy</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/servicedetails"}>
+                      <Link to="">
                         <span>Cardiology</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/servicedetails"}>
+                      <Link to="">
                         <span>Precise Diagnosis</span>
                       </Link>
                     </li>
                     <li>
-                      <Link to={"/servicedetails"}>
-                        <span>Abmbulance Services</span>
+                      <Link to="">
+                        <span>Ambulance Services</span>
                       </Link>
                     </li>
                   </ul>
@@ -114,27 +102,8 @@ function Footer() {
               </div>
               <div className="col-xl-3 col-lg-3 col-md-6">
                 <div className="widget widget-form">
-                  <h3 className="footer-title">Subscribe</h3>
-                  <form className="subscribe-form subscription-form mb-30">
-                    <div className="ajax-message"></div>
-                    <div className="input-group">
-                      <input
-                        name="email"
-                        required
-                        className="form-control"
-                        placeholder="Email Address"
-                        type="email"
-                      ></input>
-                    </div>
-                    <button
-                      name="submit"
-                      value="Submit"
-                      type="submit"
-                      className="btn btn-secondary shadow w-100"
-                    >
-                      Subscribe Now
-                    </button>
-                  </form>
+                  <h3 className="footer-title">More About us</h3>
+                  
                   <div className="footer-social-link">
                     <ul>
                       <li>
@@ -169,9 +138,9 @@ function Footer() {
             <div className="row">
               <div className="col-12 text-center">
                 <p className="copyright-text">
-                  Copyright © 2022 Design & Developed by
+                  Copyright © 2023 Redesign & Redeveloped by
                   <Link to={"/home"} className="text-secondary">
-                    KareemWael
+                    Piyush Agrawal
                   </Link>
                 </p>
               </div>

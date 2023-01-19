@@ -1,13 +1,12 @@
-import abouti1 from "../Assets/pic-1.ad1ed7ee.jpg";
-import abouti2 from "../Assets/pic-2.0593bc2f.jpg";
-import abouti3 from "../Assets/pic-3.fa689b10.jpg";
+import about1 from "../Assets/pic-1.ad1ed7ee.jpg";
+import about2 from "../Assets/pic-2.0593bc2f.jpg";
+import about3 from "../Assets/pic-3.fa689b10.jpg";
 import { FaAmbulance, FaBed, FaSyringe } from "react-icons/fa";
 import { IoWater } from "react-icons/io5";
-import { Link } from "react-router-dom";
-
+import "./aboutus.css"
 function AboutUs() {
   return (
-    <div>
+    <div >
       <section className="section about-area">
         <div className="container-fluid">
           <div className="row align-items-center">
@@ -15,18 +14,18 @@ function AboutUs() {
               <div className="about-images">
                 <ul>
                   <li>
-                    <img className="img1" src={abouti1} alt="img" />
+                    <img className="img1" src={about1} alt="img" />
                   </li>
                   <li>
-                    <img className="img2" src={abouti2} alt="img" />
+                    <img className="img2" src={about2} alt="img" />
                   </li>
                   <li>
-                    <img className="img3" src={abouti3} alt="img" />
+                    <img className="img3" src={about3} alt="img" />
                   </li>
                   <li>
                     <div className="exp-bx">
-                      20
-                      <span>Year Experience</span>
+                      10
+                      <span>Years of Experience</span>
                     </div>
                   </li>
                 </ul>

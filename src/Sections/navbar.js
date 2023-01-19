@@ -2,28 +2,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../Assets/download.png";
 import Logo from "../Assets/Logo.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-window.onscroll = function () {
-  myFunction();
-};
 
-var navbar = document.querySelector("nav");
-
-function myFunction() {
-  if (window.pageYOffset >= 20) {
-    navbar.classList.add("sticked");
-  } else {
-    navbar.classList.remove("sticked");
-  }
-}
 
 function NavBars() {
   return (
-    <div>
+    <div className="navStick">
       <Navbar expand="lg">
         <Container fluid>
           <Link to={"/home"} className="navbar-brand">

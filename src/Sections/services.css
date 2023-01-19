@@ -1,0 +1,5 @@
+@media (max-width: 370px) {
+  .serviceSlider {
+    display: none;
+  }
+}
