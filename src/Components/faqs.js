@@ -3,7 +3,6 @@ import "./faqs.css";
 import "./about.css";
 import "../index.css";
 import { FiHome } from "react-icons/fi";
-import News from "../Sections/news";
 import Footer from "../Sections/footer";
 import ToTop from "../Sections/totop";
 import Accordion from "react-bootstrap/Accordion";

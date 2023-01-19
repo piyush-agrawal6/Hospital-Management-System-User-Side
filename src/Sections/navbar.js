@@ -13,7 +13,7 @@ function NavBars() {
     <div className="navStick">
       <Navbar expand="lg">
         <Container fluid>
-          <Link to={"/home"} className="navbar-brand">
+          <Link to={"/"} className="navbar-brand">
             <img src={Logo} title="logo" alt="img" />
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

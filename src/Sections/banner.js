@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import headerImage from "../Assets/doctor.7c2bc96d.png";
 import doctor from "../Assets/doctor.webp";
 import "./banner.css";
 function Banner() {

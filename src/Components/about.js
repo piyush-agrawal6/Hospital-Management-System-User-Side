@@ -1,12 +1,10 @@
 import AboutUs from "../Sections/aboutus";
 import NavBars from "../Sections/navbar";
-import Testimonial from "../Sections/testimonial";
 import Footer from "../Sections/footer";
 import ToTop from "../Sections/totop";
 import "./about.css";
 import Services2 from "../Sections/services2";
 import { FiHome } from "react-icons/fi";
-import Team from "../Sections/Team";
 import { Link } from "react-router-dom";
 
 function About() {
@@ -37,7 +35,6 @@ function About() {
       </div>
       <AboutUs />
       <Services2 />
-      <Testimonial />
       <Footer />
       <ToTop />
     </div>

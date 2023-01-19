@@ -56,12 +56,7 @@ function Service() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/servicedetails"}
-                  >
-                    View More
-                  </Link>
+                 
                 </div>
               </div>
             </div>
@@ -78,12 +73,7 @@ function Service() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/servicedetails"}
-                  >
-                    View More
-                  </Link>
+                 
                 </div>
               </div>
             </div>
@@ -100,12 +90,7 @@ function Service() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/servicedetails"}
-                  >
-                    View More
-                  </Link>
+                 
                 </div>
               </div>
             </div>
@@ -122,12 +107,7 @@ function Service() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/servicedetails"}
-                  >
-                    View More
-                  </Link>
+                  
                 </div>
               </div>
             </div>
@@ -144,12 +124,7 @@ function Service() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/servicedetails"}
-                  >
-                    View More
-                  </Link>
+                 
                 </div>
               </div>
             </div>
@@ -166,12 +141,7 @@ function Service() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link
-                    className="btn btn-primary light"
-                    to={"/servicedetails"}
-                  >
-                    View More
-                  </Link>
+                 
                 </div>
               </div>
             </div>

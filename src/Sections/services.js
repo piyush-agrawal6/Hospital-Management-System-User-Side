@@ -74,9 +74,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link className="btn btn-primary light" to={"/service"}>
-                    View More
-                  </Link>
+                  
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -91,9 +89,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link className="btn btn-primary light" to={"/service"}>
-                    View More
-                  </Link>
+                  
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -108,9 +104,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link className="btn btn-primary light" to={"/service"}>
-                    View More
-                  </Link>
+                
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -125,9 +119,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link className="btn btn-primary light" to={"/service"}>
-                    View More
-                  </Link>
+                 
                 </div>
               </div>
               <div className="feature-container feature-bx2 feature2">
@@ -142,9 +134,7 @@ function Services() {
                   <p>
                     Phasellus venenatis porta rhoncus. Integer et viverra felis.
                   </p>
-                  <Link className="btn btn-primary light" to={"/service"}>
-                    View More
-                  </Link>
+                
                 </div>
               </div>
             </Slider>
