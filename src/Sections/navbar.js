@@ -37,7 +37,7 @@ function NavBars() {
                   Patient
                 </Link>
                 <a href="a" className="dropdown-item">
-                  Doctor
+                  Staff
                 </a>
               </NavDropdown>
               <Link to="/Contact" className="nav-link">
