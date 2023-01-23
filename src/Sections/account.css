@@ -1,0 +1,142 @@
+.account-wraper1 {
+  padding-bottom: 100px;
+}
+
+.account-wraper1 .appointment-inner {
+  background-color: #f5f5fc;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-sp2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(../Assets/appointment-sec.png);
+  background-repeat: no-repeat;
+  background-position: 20px 140px;
+}
+
+.appointment-form {
+  background-color: #fff;
+  box-shadow: 0 10px 60px 0 rgb(31 34 120 / 10%);
+  border-radius: 40px;
+  padding: 40px 35px;
+  text-align: center;
+  position: relative;
+  margin-left: 50px;
+}
+
+.appointment-form h3 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2278;
+  line-height: 1.3;
+}
+
+.form-wraper .form-group {
+  margin-bottom: 20px;
+}
+
+.form-wraper .form-control {
+  border: 1px solid rgba(86, 90, 207, 0.3);
+  border-radius: 8px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  padding: 15px 25px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+}
+
+.appointment-form button {
+  margin-top: 15px;
+  background-color: #f17732;
+  color: #fff;
+  font-size: 16px !important;
+  padding: 20px 35px !important;
+  line-height: 1 !important;
+}
+
+.appointment-form button:hover {
+  background-color: #ff853f;
+}
+
+.appointment-form:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #565acf;
+  z-index: -1;
+}
+
+.appointment-thumb {
+  width: 650px;
+  margin-left: 0;
+  position: relative;
+}
+
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.appointment-thumb .images-group .img1 {
+  height: 400px;
+  right: 20px;
+  bottom: 16px;
+  -webkit-animation: left-right 2s infinite alternate;
+  animation: left-right 2s infinite alternate;
+}
+
+.appointment-thumb .images-group img {
+  position: absolute;
+}
+
+@keyframes left-right {
+  0% {
+    right: 20px;
+  }
+  100% {
+    right: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .appointment-thumb {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .appointment-thumb .images-group .img1 {
+    height: 71%;
+  }
+}
+
+@media (max-width: 732px) {
+  .appointment-thumb {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .appointment-thumb .images-group .img1 {
+    height: 71%;
+  }
+  .appointment-form {
+    background-color: #fff;
+    box-shadow: 0 10px 60px 0 rgb(31 34 120 / 10%);
+    border-radius: 40px;
+    padding: 40px 35px;
+    text-align: center;
+    position: relative;
+    margin-left: 0;
+  }
+}

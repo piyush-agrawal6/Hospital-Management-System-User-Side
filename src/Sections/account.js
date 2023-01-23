@@ -1,6 +1,6 @@
 import MobileImg from "../Assets/mobile.f82d7322.png";
 import WomanImg from "../Assets/women.eb5c49c5.png";
-
+import "./account.css";
 function Account() {
   return (
     <div>
@@ -22,12 +22,11 @@ function Account() {
                         </select>
                       </div>
                       <div className="form-group">
-                        <select className="form-select form-control">
-                          <option>Select Doctor</option>
-                          <option value={1}>One</option>
-                          <option value={2}>Two</option>
-                          <option value={3}>Three</option>
-                        </select>
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Problem/query"
+                        ></input>
                       </div>
                       <div className="form-group">
                         <input
@@ -40,11 +39,36 @@ function Account() {
                         <input
                           type="number"
                           className="form-control"
-                          placeholder="Phone Numbers"
+                          placeholder="Phone Number"
+                        ></input>
+                      </div>
+                      <div className="form-group">
+                        <input
+                          type="number"
+                          className="form-control"
+                          placeholder="Age"
+                        ></input>
+                      </div>
+                      <div className="form-group">
+                        <select className="form-select form-control">
+                          <option>Select Gender</option>
+                          <option value={1}>Male</option>
+                          <option value={2}>Female</option>
+                          <option value={3}>Other</option>
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Adress"
                         ></input>
                       </div>
                       <div className="form-group">
                         <input type="date" className="form-control"></input>
+                      </div>
+                      <div className="form-group">
+                        <input type="time" className="form-control"></input>
                       </div>
                       <button
                         type="submit"
