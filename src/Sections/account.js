@@ -1,7 +1,31 @@
 import MobileImg from "../Assets/mobile.f82d7322.png";
 import WomanImg from "../Assets/women.eb5c49c5.png";
 import "./account.css";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { createBooking } from "../Redux/booking/action";
 function Account() {
+  const [formData, setFormData] = useState({
+    patientName: "",
+    age: "",
+    patientID: 1,
+    gender: "not defined",
+    mobile: "",
+    address: "",
+    department: "",
+    problem: "",
+    time: "",
+    date: "",
+  });
+  const dispatch = useDispatch();
+  const handleFormChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData)
+    dispatch(createBooking(formData));
+  };
   return (
     <div>
       <section className="section-area account-wraper1">
@@ -14,7 +38,11 @@ function Account() {
                     <h3>Book Appointment</h3>
                     <form action="#">
                       <div className="form-group">
-                        <select className="form-select form-control">
+                        <select
+                          className="form-select form-control"
+                          name="department"
+                          onChange={handleFormChange}
+                        >
                           <option>Select Department</option>
                           <option value={1}>One</option>
                           <option value={2}>Two</option>
@@ -25,7 +53,10 @@ function Account() {
                         <input
                           type="text"
                           className="form-control"
-                          placeholder="Problem/query"
+                          placeholder="Problem"
+                          value={formData.problem}
+                          name="problem"
+                          onChange={handleFormChange}
                         ></input>
                       </div>
                       <div className="form-group">
@@ -33,6 +64,9 @@ function Account() {
                           type="text"
                           className="form-control"
                           placeholder="Your Name"
+                          value={formData.patientName}
+                          name="patientName"
+                          onChange={handleFormChange}
                         ></input>
                       </div>
                       <div className="form-group">
@@ -40,6 +74,9 @@ function Account() {
                           type="number"
                           className="form-control"
                           placeholder="Phone Number"
+                          value={formData.mobile}
+                          name="mobile"
+                          onChange={handleFormChange}
                         ></input>
                       </div>
                       <div className="form-group">
@@ -47,32 +84,55 @@ function Account() {
                           type="number"
                           className="form-control"
                           placeholder="Age"
+                          value={formData.age}
+                          name="age"
+                          onChange={handleFormChange}
                         ></input>
                       </div>
                       <div className="form-group">
-                        <select className="form-select form-control">
-                          <option>Select Gender</option>
-                          <option value={1}>Male</option>
-                          <option value={2}>Female</option>
-                          <option value={3}>Other</option>
+                        <select
+                          className="form-select form-control"
+                          name="gender"
+                          onChange={handleFormChange}
+                        >
+                          <option value="not defined">Select Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
                         </select>
                       </div>
                       <div className="form-group">
                         <input
                           type="text"
                           className="form-control"
-                          placeholder="Adress"
+                          placeholder="Address"
+                          value={formData.address}
+                          name="address"
+                          onChange={handleFormChange}
                         ></input>
                       </div>
                       <div className="form-group">
-                        <input type="date" className="form-control"></input>
+                        <input
+                          type="date"
+                          className="form-control"
+                          value={formData.date}
+                          name="date"
+                          onChange={handleFormChange}
+                        ></input>
                       </div>
                       <div className="form-group">
-                        <input type="time" className="form-control"></input>
+                        <input
+                          type="time"
+                          className="form-control"
+                          value={formData.time}
+                          name="time"
+                          onChange={handleFormChange}
+                        ></input>
                       </div>
                       <button
                         type="submit"
                         className="btn btn-secondary btn-lg"
+                        onClick={handleSubmit}
                       >
                         Appointment Now
                       </button>

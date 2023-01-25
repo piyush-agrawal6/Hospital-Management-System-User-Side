@@ -40,15 +40,13 @@ function NavBars() {
                   Staff
                 </a>
               </NavDropdown>
-              <Link to="/Contact" className="nav-link">
-                <Link to={"/report"}>
+              <Link to="/Report" className="nav-link">
                   <button type="button">
                     Report
                     <span>
                       <IoIosArrowForward />
                     </span>
                   </button>
-                </Link>
               </Link>
             </Nav>
           </Navbar.Collapse>
