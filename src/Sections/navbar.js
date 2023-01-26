@@ -6,10 +6,17 @@ import Logo from "../Assets/Logo.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import { useDispatch, useSelector } from "react-redux";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const notify = (text) => toast(text);
 
 function NavBars() {
+  const { data } = useSelector((store) => store.auth);
+  const dispatch = useDispatch();
   return (
     <div className="navStick">
+      <ToastContainer />
       <Navbar expand="lg">
         <Container fluid>
           <Link to={"/"} className="navbar-brand">
@@ -32,21 +39,34 @@ function NavBars() {
               <Link to={"/booking"} className="nav-link">
                 Booking
               </Link>
-              <NavDropdown title="Login" id="basic-nav-dropdown">
-                <Link to={"/login"} className="dropdown-item">
-                  Patient
+              {data?.isAuthenticated ? (
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={() => {
+                    dispatch({ type: "AUTH_LOGOUT" });
+                    notify("Logged out");
+                  }}
+                >
+                  Logout
                 </Link>
-                <a href="a" className="dropdown-item">
-                  Staff
-                </a>
-              </NavDropdown>
+              ) : (
+                <NavDropdown title="Login" id="basic-nav-dropdown">
+                  <Link to={"/login"} className="dropdown-item">
+                    Patient
+                  </Link>
+                  <a href="a" className="dropdown-item">
+                    Staff
+                  </a>
+                </NavDropdown>
+              )}
               <Link to="/Report" className="nav-link">
-                  <button type="button">
-                    Report
-                    <span>
-                      <IoIosArrowForward />
-                    </span>
-                  </button>
+                <button type="button">
+                  Report
+                  <span>
+                    <IoIosArrowForward />
+                  </span>
+                </button>
               </Link>
             </Nav>
           </Navbar.Collapse>

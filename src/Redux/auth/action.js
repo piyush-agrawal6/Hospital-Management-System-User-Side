@@ -10,22 +10,18 @@ export const authLogin = (data) => async (dispatch) => {
       data
     );
     console.log(res);
-    // dispatch({
-    //   type: types.LOGIN_USER_SUCCESS,
-    //   payload: {
-    //     message: res.data.message,
-    //     user: res.data.user,
-    //     // token: res.data.token,
-    //     report: res.data.report,
-    //   },
-    // });
-  } catch (error) {
     dispatch({
-      type: types.LOGIN_USER_ERROR,
+      type: types.LOGIN_USER_SUCCESS,
       payload: {
-        message: error,
+        message: res.data.message,
+        user: res.data.user,
+        token: res.data.token,
+        report: res.data.report,
       },
     });
+    return res.data
+  } catch (error) {
+    console.log(error);
   }
 };
 

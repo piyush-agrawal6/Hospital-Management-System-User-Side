@@ -3,31 +3,51 @@ import WomanImg from "../Assets/women.eb5c49c5.png";
 import "./account.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { createBooking } from "../Redux/booking/action";
+import { createBooking, createPatient } from "../Redux/booking/action";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const notify = (text) => toast(text);
+
 function Account() {
-  const [formData, setFormData] = useState({
+  let initialData = {
     patientName: "",
     age: "",
-    patientID: 1,
-    gender: "not defined",
+    gender: "",
     mobile: "",
     address: "",
-    department: "",
-    problem: "",
+    email: "",
+    disease: "",
     time: "",
     date: "",
-  });
+  };
+  const [formData, setFormData] = useState(initialData);
+  const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
   const handleFormChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData)
-    dispatch(createBooking(formData));
+    try {
+      setLoading(true);
+      dispatch(createPatient({ ...formData, patientID: Date.now() })).then(
+        (res) => {
+          console.log(res);
+          let data = { ...formData, patientID: res.id };
+          dispatch(createBooking(data));
+          setFormData(initialData);
+          notify("Appointment Booked Successfully");
+          setLoading(false);
+        }
+      );
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div>
+      <ToastContainer />
       <section className="section-area account-wraper1">
         <div className="container-fluid">
           <div className="appointment-inner section-sp2">
@@ -38,25 +58,14 @@ function Account() {
                     <h3>Book Appointment</h3>
                     <form action="#">
                       <div className="form-group">
-                        <select
-                          className="form-select form-control"
-                          name="department"
-                          onChange={handleFormChange}
-                        >
-                          <option>Select Department</option>
-                          <option value={1}>One</option>
-                          <option value={2}>Two</option>
-                          <option value={3}>Three</option>
-                        </select>
-                      </div>
-                      <div className="form-group">
                         <input
-                          type="text"
+                          type="email"
                           className="form-control"
-                          placeholder="Problem"
-                          value={formData.problem}
-                          name="problem"
+                          placeholder="email"
+                          value={formData.email}
+                          name="email"
                           onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <div className="form-group">
@@ -67,6 +76,7 @@ function Account() {
                           value={formData.patientName}
                           name="patientName"
                           onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <div className="form-group">
@@ -77,6 +87,18 @@ function Account() {
                           value={formData.mobile}
                           name="mobile"
                           onChange={handleFormChange}
+                          required
+                        ></input>
+                      </div>
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="disease"
+                          value={formData.disease}
+                          name="disease"
+                          onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <div className="form-group">
@@ -87,6 +109,7 @@ function Account() {
                           value={formData.age}
                           name="age"
                           onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <div className="form-group">
@@ -94,8 +117,9 @@ function Account() {
                           className="form-select form-control"
                           name="gender"
                           onChange={handleFormChange}
+                          required
                         >
-                          <option value="not defined">Select Gender</option>
+                          <option value="">Select Gender</option>
                           <option value="male">Male</option>
                           <option value="female">Female</option>
                           <option value="other">Other</option>
@@ -109,6 +133,7 @@ function Account() {
                           value={formData.address}
                           name="address"
                           onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <div className="form-group">
@@ -118,6 +143,7 @@ function Account() {
                           value={formData.date}
                           name="date"
                           onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <div className="form-group">
@@ -127,6 +153,7 @@ function Account() {
                           value={formData.time}
                           name="time"
                           onChange={handleFormChange}
+                          required
                         ></input>
                       </div>
                       <button
@@ -134,7 +161,7 @@ function Account() {
                         className="btn btn-secondary btn-lg"
                         onClick={handleSubmit}
                       >
-                        Appointment Now
+                        {loading ? "Loading..." : "Book Now"}
                       </button>
                     </form>
                   </div>

@@ -1,11 +1,15 @@
 import "./login.css";
 import "../index.css";
 import logo from "../Assets/download.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavBars from "../Sections/navbar";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { authLogin } from "../Redux/auth/action";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const notify = (text) => toast(text);
 
 function Login() {
   const [form, setForm] = useState({ patientID: "", password: "" });
@@ -13,12 +17,29 @@ function Login() {
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+  const navigate = useNavigate();
   const handleClick = (e) => {
-    dispatch(authLogin(form));
+    try {
+      dispatch(authLogin(form)).then((res) => {
+        if (res.message === "Login Successful.") {
+          notify("Login Successful.");
+          return navigate("/");
+        }
+        if (res.message === "Wrong credentials, Please try again.") {
+          return notify("Wrong credentials, Please try again.");
+        }
+        if (res.message === "Error occurred, unable to Login.") {
+        }
+      });
+    } catch (error) {
+      console.log(error);
+      return notify("Error occurred, unable to Login.");
+    }
   };
 
   return (
     <>
+      <ToastContainer />
       <NavBars />
       <div className="section-area account-wraper2">
         <div className="container">

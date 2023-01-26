@@ -15,6 +15,18 @@ export const createBooking = (data) => async (dispatch) => {
     console.log(error);
   }
 };
+// create patient
+export const createPatient = (data) => async (dispatch) => {
+  try {
+    const res = await axios.post(
+      `https://zany-gray-clam-gear.cyclic.app/patients/register`,
+      data
+    );
+    return res.data
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 // get post
 // export const getPost = () => async (dispatch) => {
