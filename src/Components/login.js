@@ -1,11 +1,11 @@
 import "./login.css";
 import "../index.css";
-import logo from "../Assets/download.png";
+import logo from "../Assets/Logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import NavBars from "../Sections/navbar";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { authLogin } from "../Redux/auth/action";
+import { authLogin, forgotPassword } from "../Redux/auth/action";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,6 +13,7 @@ const notify = (text) => toast(text);
 
 function Login() {
   const [form, setForm] = useState({ patientID: "", password: "" });
+  const [email, setemail] = useState("");
   const dispatch = useDispatch();
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -35,6 +36,20 @@ function Login() {
       console.log(error);
       return notify("Error occurred, unable to Login.");
     }
+  };
+  const [forgotLoading, setforgetLoading] = useState(false);
+  const HandlePassword = () => {
+    let data = { email, type: "patient" };
+    setforgetLoading(true);
+    dispatch(forgotPassword(data)).then((res) => {
+      if (res.message === "User not found") {
+        setforgetLoading(false);
+        return notify("User Not Found");
+      }
+      setemail("");
+      setforgetLoading(false);
+      return notify("Account Details Send");
+    });
   };
 
   return (
@@ -79,9 +94,22 @@ function Login() {
                     >
                       Login
                     </Link>
-                    <Link to="">Forgot Password?</Link>
+                    <p>Forgot Account Details?</p>
                   </div>
                 </form>
+                <div className="forgotPass">
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={({ target }) => setemail(target.value)}
+                    placeholder="Enter email"
+                  />
+                  <br />
+                  <button onClick={HandlePassword}>
+                    {forgotLoading ? "Loading.." : "Send Mail"}
+                  </button>
+                </div>
               </div>
             </div>
           </div>

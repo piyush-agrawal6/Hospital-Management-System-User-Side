@@ -31,3 +31,15 @@ a:hover {
   color: #444;
   font-weight: 500;
 }
+
+.forgotPass input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.forgotPass button {
+  border-radius: 10px;
+}

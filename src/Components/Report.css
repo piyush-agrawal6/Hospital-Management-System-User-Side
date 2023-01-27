@@ -1,0 +1,93 @@
+.reportTables {
+  width: 80%;
+  margin: 2rem auto;
+}
+.reportTables table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reportTables td,
+th {
+  border: 1px solid rgb(174, 174, 255);
+  text-align: left;
+  padding: 8px;
+}
+
+.reportTables tr:nth-child(even) {
+  background-color: rgb(189, 189, 243);
+}
+.reportContainer {
+  width: 60%;
+  margin: 2rem auto;
+  background-color: rgb(240, 248, 255);
+  border: 2px solid rgb(174, 174, 255);
+  border-radius: 5px;
+}
+.reportLogin {
+  text-align: center;
+}
+.reportHeading {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(174, 174, 255);
+  padding: 3rem 2rem;
+}
+.reportHeading h1 {
+  font-weight: bold;
+  color: white;
+}
+.reportDetail {
+  display: flex;
+  justify-content: space-evenly;
+}
+.reportDetail > div {
+  width: 50%;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.reportMedical {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(174, 174, 255);
+  padding-top: 2rem;
+}
+.reportMedical > div:nth-child(1) {
+  width: 40%;
+  padding: 0 3rem;
+}
+.reportMedical > div:nth-child(2) {
+  width: 60%;
+  padding: 0 2rem;
+}
+.reportMedical > div:nth-child(1) p {
+  color: rgb(121, 121, 254);
+}
+.reportMedicines {
+  width: 80%;
+  margin: 2rem auto;
+}
+.reportMedicines table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reportMedicines td,
+th {
+  border: 1px solid rgb(174, 174, 255);
+  text-align: left;
+  padding: 8px;
+}
+
+.reportMedicines tr:nth-child(even) {
+  background-color: rgb(189, 189, 243);
+}
+
+.reportDate {
+  padding: 1rem 2rem 2rem 3rem;
+}
+.reportDate p {
+  color: rgb(121, 121, 254);
+}
