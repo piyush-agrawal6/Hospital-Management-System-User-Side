@@ -65,6 +65,8 @@ Password - masai
 
 Client - https://hms-user-side.netlify.app/
 
+Staff Dashboard - https://hm-system.netlify.app/
+
 Server - https://github.com/piyush-agrawal6/HMS-Backend
 
 ## Screenshots
