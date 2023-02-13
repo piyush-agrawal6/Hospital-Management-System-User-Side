@@ -25,7 +25,7 @@ Start the server
 ```
 
 # Hospital-Management-System-User-Side
-This website is made for the user interaction only , where the user or patients can book appointments , can get the reports online , know the details about the hospital and many more information..
+This website is made for the user interaction only , where the user or patients can book appointments , can get the reports online , know the details about the hospital and many more information...
 
 ## Tech Stack
 
